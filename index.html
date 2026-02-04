@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoMaxx - Serviços de Informática</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/logoInfomax.png" alt="Logo InfoMaxx" id="logo-img" onerror="this.src='https://scontent-cdg4-3.cdninstagram.com/v/t51.2885-19/479944579_928954879400482_3066426077902976643_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFSfqjd2v-fR8JJKlfZDWdwjJtnekaIpgJw41LE9fJTFdMAwJoVKrF1JnL-HwFdeNCtIXOxHYQ1lMJ0aKDYluzl&_nc_ohc=fosIo961Sy0Q7kNvwFcm7Bq&_nc_gid=uCu1kQBxJRcg23v2fIBNxg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfupYugY2pnilHtgc7xnMVF5u3kYsu7SJfNrGiuPU7sc8w&oe=6989121E&_nc_sid=7a9f4b'">
+                <div class="logo-text">Info<span>Maxx</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Soluções <span>Completas</span><br>em Informática</h1>
+                <p>Especialistas em formatação, manutenção, instalação de programas, redes e otimização de computadores. Qualidade, segurança e agilidade para você e sua empresa.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-roxo">Nossos Serviços</a>
+                    <a href="#contact" class="btn btn-azul">Solicite Orçamento</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/500x350/8B5CF6/FFFFFF?text=InfoMaxx+Serviços+Informática" alt="InfoMaxx - Serviços de Informática">
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos soluções completas para manter seu computador funcionando perfeitamente</p>
+            </div>
+            <div class="services-grid">
+                <!-- Serviço 1: Formatação -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h3>Formatação</h3>
+                    <p>Serviço completo de formatação do seu computador ou notebook, incluindo backup e instalação completa.</p>
+                    <div class="service-toggle" onclick="toggleService(this)">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-details">
+                        <h4>O que incluímos:</h4>
+                        <ul>
+                            <li>Backup completo dos seus arquivos importantes</li>
+                            <li>Instalação do sistema operacional de sua preferência (Windows, Linux, etc.)</li>
+                            <li>Instalação dos drivers necessários</li>
+                            <li>Configuração inicial do sistema</li>
+                            <li>Instalação dos programas básicos (navegadores, antivírus, etc.)</li>
+                            <li>Restauração dos arquivos do backup</li>
+                        </ul>
+                        <div class="why">
+                            <strong>Por que formatar?</strong>
+                            <p>A formatação é recomendada quando seu computador está muito lento, com vírus, ou apresentando problemas frequentes. É como dar uma "vida nova" ao seu equipamento, deixando-o mais rápido e livre de problemas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 2: Instalação de Programas -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Instalação de Programas</h3>
+                    <p>Instalação e configuração profissional de programas para seu computador, com segurança e garantia.</p>
+                    <div class="service-toggle" onclick="toggleService(this)">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-details">
+                        <h4>O que fazemos:</h4>
+                        <ul>
+                            <li>Pacote Office (Word, Excel, PowerPoint)</li>
+                            <li>Navegadores de internet</li>
+                            <li>Programas de edição de imagem e vídeo</li>
+                            <li>Antivírus e programas de segurança</li>
+                            <li>Programas específicos para sua necessidade</li>
+                            <li>Atualização de programas existentes</li>
+                        </ul>
+                        <div class="why">
+                            <strong>Instalação Segura</strong>
+                            <p>Todas as instalações são feitas com programas originais e de fontes confiáveis, garantindo a segurança do seu computador e o funcionamento correto dos programas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 3: Manutenção -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Manutenção</h3>
+                    <p>Serviços completos de manutenção para seu computador ou notebook, com diagnóstico e reparo.</p>
+                    <div class="service-toggle" onclick="toggleService(this)">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-details">
+                        <h4>Serviços incluídos:</h4>
+                        <ul>
+                            <li>Diagnóstico completo do equipamento</li>
+                            <li>Troca de peças com defeito</li>
+                            <li>Reparo de problemas de hardware</li>
+                            <li>Solução de problemas de software</li>
+                            <li>Atualização de componentes</li>
+                            <li>Manutenção preventiva</li>
+                        </ul>
+                        <div class="why">
+                            <strong>Manutenção Preventiva</strong>
+                            <p>A manutenção regular é essencial para prolongar a vida útil do seu equipamento e prevenir problemas futuros. Realizamos check-ups completos e identificamos possíveis problemas antes que eles se tornem mais sérios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 4: Rede/Internet -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Rede/Internet</h3>
+                    <p>Soluções completas para sua rede e conexão com a internet, garantindo estabilidade e segurança.</p>
+                    <div class="service-toggle" onclick="toggleService(this)">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-details">
+                        <h4>O que oferecemos:</h4>
+                        <ul>
+                            <li>Configuração de roteadores e modems</li>
+                            <li>Instalação de redes Wi-Fi</li>
+                            <li>Otimização da velocidade da internet</li>
+                            <li>Configuração de compartilhamento de arquivos</li>
+                            <li>Resolução de problemas de conexão</li>
+                            <li>Configuração de segurança da rede</li>
+                        </ul>
+                        <div class="why">
+                            <strong>Rede Estável e Segura</strong>
+                            <p>Uma rede bem configurada é essencial para o bom funcionamento da internet e para a segurança dos seus dados. Garantimos uma conexão estável e protegida para sua casa ou escritório.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 5: Limpeza -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Limpeza</h3>
+                    <p>Serviço completo de limpeza física e digital do seu equipamento, melhorando performance e durabilidade.</p>
+                    <div class="service-toggle" onclick="toggleService(this)">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-details">
+                        <h4>O que fazemos:</h4>
+                        <ul>
+                            <li>Limpeza interna dos componentes</li>
+                            <li>Remoção de poeira e sujeira</li>
+                            <li>Troca de pasta térmica</li>
+                            <li>Limpeza de arquivos temporários</li>
+                            <li>Remoção de programas desnecessários</li>
+                            <li>Organização do sistema de arquivos</li>
+                        </ul>
+                        <div class="why">
+                            <strong>Importância da Limpeza</strong>
+                            <p>A limpeza regular do computador é fundamental para seu bom funcionamento e durabilidade. O acúmulo de poeira pode causar superaquecimento e diminuir o desempenho do equipamento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 6: Otimização -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Otimização</h3>
+                    <p>Melhore o desempenho do seu computador com nosso serviço de otimização personalizado.</p>
+                    <div class="service-toggle" onclick="toggleService(this)">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-details">
+                        <h4>O que incluímos:</h4>
+                        <ul>
+                            <li>Análise de desempenho do sistema</li>
+                            <li>Otimização do Windows</li>
+                            <li>Ajuste de programas da inicialização</li>
+                            <li>Desfragmentação do disco rígido</li>
+                            <li>Limpeza do registro do Windows</li>
+                            <li>Configurações para melhor performance</li>
+                        </ul>
+                        <div class="why">
+                            <strong>Mais Velocidade</strong>
+                            <p>Com a otimização adequada, seu computador pode ganhar mais velocidade e eficiência, proporcionando uma experiência muito melhor no dia a dia. Realizamos ajustes específicos para cada tipo de uso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2>O que dizem nossos clientes</h2>
+                <p>Avaliações reais do Google</p>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Excelente serviço! Meu notebook estava muito lento e com vírus, a InfoMaxx formatou e deixou como novo. Atendimento rápido e muito profissional. Recomendo muito!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MS</div>
+                        <div class="author-info">
+                            <strong>Maria Silva</strong>
+                            <span>Cliente desde 2023</span>
+                            <div class="google-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span> (Google)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Contratei a instalação de programas e a otimização do meu PC. O resultado foi incrível! Agora meu computador roda todos os programas que preciso sem travar. Preço justo e qualidade excelente."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JC</div>
+                        <div class="author-info">
+                            <strong>João Carlos</strong>
+                            <span>Cliente desde 2024</span>
+                            <div class="google-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span> (Google)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Precisava configurar minha rede Wi-Fi em casa e a InfoMaxx resolveu meu problema rapidamente. Agora tenho internet estável em todos os cômodos. Serviço de primeira qualidade!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AP</div>
+                        <div class="author-info">
+                            <strong>Ana Paula</strong>
+                            <span>Cliente desde 2025</span>
+                            <div class="google-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span> (Google)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="container contact-content">
+            <h2>Entre em Contato</h2>
+            <p>Está precisando de algum serviço? Entre em contato agora mesmo e solicite um orçamento sem compromisso!</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/5519992897076" class="contact-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp: (19) 99289-7076
+                </a>
+                <a href="https://www.instagram.com/infomaxx91/" class="contact-btn instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    Instagram: @infomaxx91
+                </a>
+            </div>
+            <p style="font-size: 1rem; margin-top: 2rem; opacity: 0.9;">
+                <i class="far fa-clock"></i> Atendimento de segunda a sábado, das 8h às 20h
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logoInfomax.png" alt="Logo InfoMaxx" onerror="this.src='https://scontent-cdg4-3.cdninstagram.com/v/t51.2885-19/479944579_928954879400482_3066426077902976643_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFSfqjd2v-fR8JJKlfZDWdwjJtnekaIpgJw41LE9fJTFdMAwJoVKrF1JnL-HwFdeNCtIXOxHYQ1lMJ0aKDYluzl&_nc_ohc=fosIo961Sy0Q7kNvwFcm7Bq&_nc_gid=uCu1kQBxJRcg23v2fIBNxg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfupYugY2pnilHtgc7xnMVF5u3kYsu7SJfNrGiuPU7sc8w&oe=6989121E&_nc_sid=7a9f4b'">
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Início</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#testimonials">Depoimentos</a>
+                    <a href="#contact">Contato</a>
+                    <a href="https://www.instagram.com/bernisbr/" target="_blank">Criado por Maycon Bernardes</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 InfoMaxx - Serviços de Informática. Todos os direitos reservados.</p>
+                <p>Criado por <a href="https://www.instagram.com/bernisbr/" target="_blank">Maycon Bernardes</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
